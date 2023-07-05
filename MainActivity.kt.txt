@@ -1,0 +1,26 @@
+// MainActivity.kt
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val textViewName = findViewById<TextView>(.id.textViewName)
+        val textViewEmail = findViewById<TextView>(R.id.textViewEmail)
+        val textViewJurusan = findViewById<TextView>(R.id.textViewJurusan)
+        val textViewSemester = findViewById<TextView>(R.id.textViewSemester)
+
+        val name = "Annisa Putri"
+        val email = "140703annisaputri@gmail.com"
+        val jurusan = "Industri"
+        val semester = "Semester 5"
+
+        textViewName.text = name
+        textViewEmail.text = email
+        textViewJurusan.text = jurusan
+        textViewSemester.text = semester
+    }
+}
